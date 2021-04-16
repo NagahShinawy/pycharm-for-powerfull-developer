@@ -1,0 +1,1 @@
+# pycharm-for-powerfull-developer
