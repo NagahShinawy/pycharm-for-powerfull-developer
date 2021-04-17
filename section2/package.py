@@ -7,7 +7,7 @@ def weekly_avg(costs):
     return total_costs / num_day
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     weekly_costs = [20.00, 50.00, 40.00, 10.00]
     print(weekly_avg(weekly_costs))
     # using numpy

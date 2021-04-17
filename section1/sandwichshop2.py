@@ -2,7 +2,6 @@ import math
 
 
 class Calculator:
-
     def __init__(self, costs):
         self.costs = costs
 
@@ -22,5 +21,5 @@ def main():
     print(f"PBJ Cost: {charge}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
