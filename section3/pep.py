@@ -11,6 +11,7 @@ def is_element_exist(elements: Union[list, tuple, str], element) -> bool:
     :param element: item to find
     :return: True if item exist else False
     """
+
     return element in elements
 
 
@@ -44,3 +45,23 @@ class Number:
         if self.num % 5 == 0:
             return "Buzz"
         return self.num
+
+    def is_odd(self):
+        """
+        :return:
+        """
+        return self
+
+
+def get_quarter_by_mont(month):
+    """
+
+    :param month: valid month number
+    :return: quarter of that month
+    """
+    if month not in range(1, 13):
+        raise ValueError("invalid month <{}>".format(month))
+    return month // 4 + 1
+
+
+print(get_quarter_by_mont(4))
