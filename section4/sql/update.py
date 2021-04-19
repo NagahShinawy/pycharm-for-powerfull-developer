@@ -26,3 +26,9 @@ print("#" * 100)
 rows = cursor.execute("SELECT bread, charge FROM menu  WHERE charge = 4")
 
 print(rows.fetchall())
+
+print("#" * 100)
+
+menu_df = pd.read_sql_query("SELECT * FROM menu", connection)
+
+print(menu_df)
