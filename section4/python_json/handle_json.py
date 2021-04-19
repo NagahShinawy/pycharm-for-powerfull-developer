@@ -3,7 +3,7 @@ created by Nagaj at 19/04/2021
 """
 import json
 
-with open("USD.json", 'r') as f:
+with open("USD.json", "r") as f:
     data: dict = json.load(f)
 
 base_dollar = data.get("base", None)

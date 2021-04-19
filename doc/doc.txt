@@ -1,0 +1,5 @@
+SQL Blob data type : Binary Large Object (BLOB) is an object data type, meaning it refers to an object.
+Unlike a character or integer data type,
+the object data type only contains a pointer or reference to the value of the object.
+A BLOB can hold a very large block of data, anything from documents to images to videos.
+You could store your great American novel in a BLOB if you really wanted to (as a file).

@@ -1,7 +1,7 @@
 import nose
 
 
-class TestPie():
+class TestPie:
     def test_charge(self):
         x = 0
         assert 0 == 0
@@ -15,7 +15,7 @@ class TestPie():
         assert 10 > 0
 
 
-class TestPie():
+class TestPie:
     def test_pay(self):
         assert 10 > 0
 
