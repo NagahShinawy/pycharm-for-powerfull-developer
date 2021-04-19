@@ -31,3 +31,5 @@ cursor.executemany("INSERT INTO students values (?, ?, ?)", students)
 connection.commit()
 
 print(cursor.execute("SELECT * FROM students").fetchall())
+
+connection.close()
