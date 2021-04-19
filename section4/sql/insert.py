@@ -16,6 +16,8 @@ menus = [
     ("white", 7, 9.8),
 
 ]
+
+# insert to custom cols
 cursor.executemany("INSERT INTO menu(bread, charge, cost) values (?,?,?)", menus)
 
 connection.commit()
