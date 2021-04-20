@@ -3,3 +3,18 @@ Unlike a character or integer data type,
 the object data type only contains a pointer or reference to the value of the object.
 A BLOB can hold a very large block of data, anything from documents to images to videos.
 You could store your great American novel in a BLOB if you really wanted to (as a file).
+
+=========================
+
+#  Open Database Connectivity (odbc) driver in computing, Open Database Connectivity is a standard application programming interface
+# for accessing database management systems
+###############################
+
+win >> search for "odbc data source" >> show popup for sql server odbc
+
+========================
+
+course repo:
+https://github.com/PacktPublishing/PyCharm-for-Power-Developer-v-
+========================
+

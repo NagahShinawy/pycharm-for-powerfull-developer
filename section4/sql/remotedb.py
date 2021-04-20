@@ -2,6 +2,8 @@
 created by Nagaj at 19/04/2021
 """
 
+# using Gearhost account for remote server
+
 import pyodbc
 import pandas as pd
 from config import server, db, user, password, driver
