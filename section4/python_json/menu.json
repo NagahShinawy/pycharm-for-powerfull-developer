@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Roasted B",
+        "bread": "white",
+        "meat": "Roasted Beef",
+        "cost": 5.0,
+        "charge": 7.0
+    },
+    {
+        "name": "Loaded Veggie",
+        "bread": "wheat",
+        "meat": null,
+        "cost": 3.0,
+        "charge": 5.0
+    },
+    {
+        "name": "Hammy Lamby",
+        "bread": "wheat",
+        "meat": [
+            "ham",
+            "lamb"
+        ],
+        "cost": 8.0,
+        "charge": 10.0
+    }
+]

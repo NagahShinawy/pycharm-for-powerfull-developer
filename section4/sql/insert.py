@@ -1,4 +1,3 @@
-
 """
 created by Nagaj at 19/04/2021
 """
@@ -14,7 +13,6 @@ cursor = connection.cursor()
 menus = [
     ("white", 4, 5),
     ("white", 7, 9.8),
-
 ]
 
 # insert to custom cols
@@ -22,7 +20,9 @@ cursor.executemany("INSERT INTO menu(bread, charge, cost) values (?,?,?)", menus
 
 connection.commit()
 
-menu_df = pd.read_sql_query("SELECT bread, charge, cost from menu WHERE charge = 4", connection)
+menu_df = pd.read_sql_query(
+    "SELECT bread, charge, cost from menu WHERE charge = 4", connection
+)
 
 
 print(menu_df)

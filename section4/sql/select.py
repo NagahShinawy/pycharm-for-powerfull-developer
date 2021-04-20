@@ -17,4 +17,3 @@ print(pd.read_sql_query("SELECT * FROM menu", connection))
 
 print("#" * 100)
 print(pd.read_sql_query("SELECT * FROM menu WHERE charge = 5", connection))
-

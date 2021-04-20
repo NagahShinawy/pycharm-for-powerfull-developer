@@ -5,17 +5,17 @@ import pyodbc
 
 from config import server, db, user, password, driver
 
-remotehost = "DRIVER={driver};SERVER={server};DATABASE={db};UID={user};PWD={password}".format(
-    server=server, db=db, user=user, password=password, driver=driver
+remotehost = (
+    "DRIVER={driver};SERVER={server};DATABASE={db};UID={user};PWD={password}".format(
+        server=server, db=db, user=user, password=password, driver=driver
+    )
 )
 connection = pyodbc.connect(remotehost)
 
 cursor = connection.cursor()
 
 try:
-    cursor.execute(
-        "CREATE TABLE students (name TEXT, age INTEGER, cls_room TEXT)"
-    )
+    cursor.execute("CREATE TABLE students (name TEXT, age INTEGER, cls_room TEXT)")
 
 except pyodbc.ProgrammingError:
     pass
