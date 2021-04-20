@@ -17,3 +17,6 @@ response = requests.get(WEATHER_ENDPOINT, headers=credentials)
 if response.status_code == 200:
     with open(os.path.join(os.getcwd(), "weather.json"), 'w') as f:
         json.dump(response.json(), f, indent=4)
+
+else:
+    print(response.reason)
