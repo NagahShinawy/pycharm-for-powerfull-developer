@@ -23,6 +23,7 @@ menutable.add_rows(rows)
 for row in rows[:3]:
     menu = Menu(*row)
     print(menu.meat, menu.name, menu.bread, menu.charge, menu.cost, menu.stock, menu.in_stock)
+    # print(row[0], row[1], .........., row[n])  # HARD WAY NOT RECOMMENDED
     # menutable.add_row([menu.meat, menu.name, menu.bread, menu.charge, menu.cost, menu.stock, menu.in_stock])
     # menutable.add_row(row)
 
