@@ -1,11 +1,15 @@
-users = [
-    {"name": "John", "age": 23, "active": False},
-    {"name": "Leon", "age": 20, "active": True},
-    {"name": "James", "age": 25, "active": True},
-    {"name": "Smith", "age": 27, "active": False},
-]
 
-active_users = [user for user in users if user['active']]
+import pandas as pd
 
-for user in active_users:
-    print(user)
+states = []
+
+with open("states.txt") as f:
+    lines = [line.strip() for line in f.readlines()]
+
+
+for state in lines[1:]:
+    st, x, y = state.split(",")
+    states.append({"state": st, "x": x, "y": y})
+
+
+pd.DataFrame(states).to_csv("states.csv", index=False)
